@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+}
+.header{
+    color: aqua;
+    text-align: center;
+}
+#inputGroup-sizing-lg{
+    background-color: grey;
+    color: aqua;
+}
+
+#calcbtn{
+    background-color: black;
+    border-color: aqua;
+    margin-top:25px;
+    color: aqua;
+}
+#calcbtn:hover{
+    background-color: aqua;
+    color: black;
+    font-size: large;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#input1{
+    padding: 10px;
+    width: 1200px;
+}
+#input2{
+    padding: 10px;
+    width: 1200px;
+}
+#input3{
+    padding: 10px;
+    width: 1200px;
+}
+#output{
+    padding: 10px;
+    width: 1200px;
+}
+#group{
+    border: solid aqua 3px;
+}
