@@ -14,6 +14,12 @@ function rgbconvert (){
     let g = parseInt(GInput.value);
     let b = parseInt(BInput.value);
 
+    if (isNaN(r) || isNaN(g) || isNaN(b)) {
+        alert("Enter valid numbers");
+        return;
+    }
+
+
     r = Math.min(255, r)
     r = Math.max(0, r)
     
