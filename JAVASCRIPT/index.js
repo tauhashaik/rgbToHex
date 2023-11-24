@@ -9,17 +9,16 @@ calcbtn.addEventListener('click', rgbconvert )
 // conversion of values into hexidecimal.
 function rgbconvert (){
 
-    // Making sure values remain within the range of 0 -255.
     let r = parseInt(RInput.value);
     let g = parseInt(GInput.value);
     let b = parseInt(BInput.value);
-
+    
     if (isNaN(r) || isNaN(g) || isNaN(b)) {
         alert("Enter valid numbers");
         return;
     }
-
-
+    
+    // Making sure values remain within the range of 0 -255.
     r = Math.min(255, r)
     r = Math.max(0, r)
     
@@ -29,7 +28,7 @@ function rgbconvert (){
     b = Math.min(255, b)
     b = Math.max(0, b)
     
-    // converting each variable into hexidecimal.
+    // converting each variable into hexidecimal with pad.Start creating 2 spaces in string result.
 let hexR = r.toString(16).padStart(2, '0');
 let hexG = g.toString(16).padStart(2, '0');
 let hexB = b.toString(16).padStart(2, '0');
@@ -37,6 +36,6 @@ let hexB = b.toString(16).padStart(2, '0');
 // adding the hexidecimal values togther.
 let hexCol = '#' + hexR + hexG + hexB;
     
-    // displaying the result to designated input tag.
+    // displaying the result to designated input tag in uppercase letters.
     output1.value = hexCol.toUpperCase();
 }
