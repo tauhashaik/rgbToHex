@@ -33,10 +33,10 @@ let hexR = r.toString(16);
 let hexG = g.toString(16);
 let hexB = b.toString(16);
 
-// Creating length of Hexidecimal value to 2 characters and adding "0" if values length is only 1 to make the length 2 characters long.
-hexR = hexR.length === 1 ? '0' + hexR : hexR;
-hexG = hexG.length === 1 ? '0' + hexG : hexG;
-hexB = hexB.length === 1 ? '0' + hexB : hexB;
+// Creating length of Hexidecimal value to 2 characters and prepending "0" if values length is only 1 to make the length 2 characters long.
+hexR = hexR.length === 1 ? "0" + hexR : hexR; 
+hexG = hexG.length === 1 ? "0" + hexG : hexG; 
+hexB= hexB.length === 1 ? "0" + hexB : hexB; 
 
 // adding the hexidecimal values togther.
 let hexCol = '#' + hexR + hexG + hexB;
