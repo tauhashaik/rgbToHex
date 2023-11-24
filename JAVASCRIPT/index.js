@@ -28,10 +28,15 @@ function rgbconvert (){
     b = Math.min(255, b)
     b = Math.max(0, b)
     
-    // converting each variable into hexidecimal with pad.Start creating 2 spaces in string result.
-let hexR = r.toString(16).padStart(2, '0');
-let hexG = g.toString(16).padStart(2, '0');
-let hexB = b.toString(16).padStart(2, '0');
+    // converting each variable into hexidecimal value.
+let hexR = r.toString(16);
+let hexG = g.toString(16);
+let hexB = b.toString(16);
+
+// Creating length of Hexidecimal value to 2 characters and adding "0" if values length is only 1 to make the length 2 characters long.
+hexR = hexR.length === 1 ? '0' + hexR : hexR;
+hexG = hexG.length === 1 ? '0' + hexG : hexG;
+hexB = hexB.length === 1 ? '0' + hexB : hexB;
 
 // adding the hexidecimal values togther.
 let hexCol = '#' + hexR + hexG + hexB;
