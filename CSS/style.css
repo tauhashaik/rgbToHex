@@ -42,3 +42,33 @@ body{
 #group{
     border: solid aqua 3px;
 }
+
+
+@media screen and (min-width: 300px) {
+    #input1,
+    #input2,
+    #input3,
+    #output {
+        width: 90%;
+        margin: auto;
+    }
+    
+    #group {
+        width: 90%;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 720px) {
+    #input1,
+    #input2,
+    #input3,
+    #output {
+        width: 90%;
+        margin: auto;
+    }
+
+    #group {
+        width: 90%;
+        margin: auto;
+    }
+}
